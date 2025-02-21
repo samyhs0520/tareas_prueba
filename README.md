@@ -18,15 +18,14 @@ Asegúrate de tener instalados los siguientes requisitos antes de ejecutar los p
 ## Configuración y Ejecución
 
 Clone el repositorio el cual contiene el frontend y al backend 
+git clone https://github.com/samyhs0520/tareas_prueba.git
 
 ### 1. Ejecutar el Backend (Spring Boot)
 
 1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-repo.git
-   cd tu-repo/backend
+   cd tareas_prueba/crud_tarea
    ```
-2. Configura la base de datos en `application.properties` o `application.yml`.
+2. Configura la base de datos en `application.properties` o cambia el nombre del archivo  `application.properties.example` a  `application.properties`
 3. Compila y ejecuta el proyecto con Maven:
    ```bash
    mvn clean install
@@ -40,7 +39,7 @@ Clone el repositorio el cual contiene el frontend y al backend
 
 1. Accede al directorio del frontend:
    ```bash
-   cd ../frontend
+   cd ../front_tarea
    ```
 2. Instala las dependencias:
    ```bash
@@ -52,21 +51,6 @@ Clone el repositorio el cual contiene el frontend y al backend
    ```
 4. El frontend estará disponible en: `http://localhost:4200`
 
----
 
-## Variables de Entorno
-Puedes definir variables de entorno para configurar la conexión entre el backend y el frontend.
 
-Ejemplo para configurar el **backend en el frontend** (en `environment.ts`):
-```ts
-export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:8080/api'
-};
-```
-
----
-
-## Contacto
-Si tienes preguntas o problemas, abre un issue en este repositorio o contáctame.
 
